@@ -104,41 +104,37 @@ export default function About() {
               
           </section>
           
-          <section className='bg-black text-4xl text-white font-mono font-semibold selection:bg-white selection:text-black pt-24'>
+          <section className='bg-black text-3xl text-white   pt-24'>
             <div className='xl:mx-96 px-48 lg:mx-24 md:mx-12'>
-                <h1>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
+                <h1 className='font-mono font-semibold text-left'>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
+                <div className='text-center'> 
                 <Link href='/contact'>
-                    <button className='bg-white mt-20 shadow-md shadow-white text-black rounded-lg py-1 px-3 hover:bg-slate-300'>Start your journey</button>
-                </Link>                        
+                    <button className='bg-white  mt-20 shadow-md shadow-white font-mono font-semibold text-black rounded-lg py-1 px-3 hover:bg-slate-300'>Start your journey</button>
+                </Link></div>
+                                       
             </div>
           </section>
 
           <section className='pt-20 bg-black'>
           <footer>
-              <div className='bg-black h-auto pt-8 pb-5'>
+              <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
                 <div className='justify-center text-center xl:mx-96 lg:mx-48 sm:mx-12'>
                   <strong className='text-white text-4xl font-mono font-semibold'>JETSPIRE</strong>
                   <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">We're here to help you reach the stars.</h3>
                   </div>
-                <div className='text-center'>
-                {navs.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={clsx(
-                          item.current ? 'bg-gray-900 text-white font-mono font-semibold' : 'mx-12 cursor-pointer font-mono font-semibold text-xl text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 pt-2 text-sm font-semibold font-mono'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                <div className='text-center flex justify-center'>
+                {navigation.map((item) => (
+                      <Link 
+                      href={item.href} 
+                      key={item.name}>
+                        <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
+                      </Link>
                     ))}
-                    <div>
-                      <p className='text-white text-lg font-mono font-semibold mt-5'>&copy;2024</p>
-                    </div>
+                    
                 </div>
-               
+                <div>
+                      <p className='text-white text-lg font-mono font-semibold  text-center mt-5'>&copy;2024</p>
+                    </div>
               </div>
             </footer>
           </section>

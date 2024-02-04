@@ -37,6 +37,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto cursor-pointer"
@@ -45,14 +46,17 @@ export default function Home() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
+                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name}>
-                        <p className="text-white font-mono font-semibold ml-2 text-lg">{item.name}</p>
+                        <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
+                  
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -104,30 +108,20 @@ export default function Home() {
           </section>
           <section>
             <footer>
-              <div className='bg-black h-auto pt-8 pb-5'>
+              <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
                 <div className='justify-center text-center xl:mx-96 lg:mx-48 sm:mx-12'>
                   <strong className='text-white text-4xl font-mono font-semibold'>JETSPIRE</strong>
                   <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">We're here to help you reach the stars.</h3>
                   </div>
-                <div className='text-center'>
-                {navs.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={clsx(
-                          item.current ? 'bg-gray-900 text-white font-mono font-semibold' : 'mx-12 cursor-pointer font-mono font-semibold text-xl text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 pt-2 text-sm font-semibold font-mono'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                  <div className='text-center flex justify-center'>
+                {navigation.map((item) => (
+                      <Link 
+                      href={item.href} 
+                      key={item.name}>
+                        <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
+                      </Link>
                     ))}
-                    <div>
-                      <p className='text-white text-lg font-mono font-semibold mt-5'>&copy;2024</p>
-                    </div>
                 </div>
-               
               </div>
             </footer>
           </section>
