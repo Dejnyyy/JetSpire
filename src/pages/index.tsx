@@ -1,11 +1,16 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx';
 
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
+  { name: 'About', href: '#', current: false },
+  { name: 'Contact', href: '#', current: false },
+  { name: 'Team', href: '#', current: false },
+]
+const navs = [
   { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
   { name: 'Team', href: '#', current: false },
@@ -108,10 +113,27 @@ export default function Home() {
           <section>
             <footer>
               <div className='bg-black h-auto py-12'>
-                <div className='justify-center text-center mx-36 xl:mx-48'>
+                <div className='justify-center text-center xl:mx-96 lg:mx-48 sm:mx-12'>
                   <strong className='text-white text-4xl font-mono font-semibold'>JETSPIRE</strong>
                   <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">We're here to help you reach the stars.</h3>
                   </div>
+                  
+                <div className='text-center'>
+                {navs.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={clsx(
+                          item.current ? 'bg-gray-900 text-white font-mono font-semibold text-lg' : 'mx-12 cursor-pointer font-mono font-semibold text-lg text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'rounded-md px-3 py-2 text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                </div>
+               
               </div>
             </footer>
           </section>
