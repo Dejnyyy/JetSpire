@@ -10,11 +10,6 @@ const navigation = [
   { name: 'Contact', href: '/contact', current: false },
   { name: 'Team', href: '/team', current: false },
 ]
-const navs = [
-  { name: 'About', href: '/about', current: false },
-  { name: 'Contact', href: '/contact', current: false },
-  { name: 'Team', href: '/team', current: false },
-]
 
 export default function Home() {
   return (
@@ -35,7 +30,27 @@ export default function Home() {
                   )}
                 </Disclosure.Button>
               </div>
-
+              <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+                    <div className="flex">
+                    {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={clsx(
+                    item.current ? 'bg-gray-900 text-white font-mono font-semibold text-lg' : 'text-gray-300 hover:bg-gray-700 hover:text-white font-mono font-semibold text-lg',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+                    </div>
+             
+            </div>
+          </Disclosure.Panel>
             
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
@@ -102,12 +117,14 @@ export default function Home() {
               </div>  
           </div>
           </section>
+
           <section className='bg-black pt-24'>
-            <div className='xl:mx-96 px-12 lg:mx-24 md:mx-12'>
+            <div className='xl:mx-48 px-12 lg:mx-24 md:mx-12'>
               <h1 className='text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono font-semibold '>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
-              <iframe className='py-12 w-96 h-80 justify-center text-center lg:w-full lg:h-full' title="vimeo-player" src="https://player.vimeo.com/video/891487351?h=2b6cd90213" width="640" height="360" allowFullScreen></iframe>
+              <iframe className='py-12 justify-center text-center lg:w-full md:w-full sm:w-full w-full' title="vimeo-player" src="https://player.vimeo.com/video/891487351?h=2b6cd90213" width="1280" height="720" allowFullScreen></iframe>
             </div>
           </section>
+
           <section>
             <footer>
               <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
@@ -130,24 +147,7 @@ export default function Home() {
 
 
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={clsx(
-                    item.current ? 'bg-gray-900 text-white font-mono font-semibold text-lg' : 'text-gray-300 hover:bg-gray-700 hover:text-white font-mono font-semibold text-lg',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
+         
         </>
       )}
     </Disclosure>
