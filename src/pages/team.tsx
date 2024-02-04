@@ -7,17 +7,17 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/home', current: false },
-  { name: 'About', href: '#', current: true },
+  { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
-  { name: 'Team', href: '/team', current: false },
+  { name: 'Team', href: '#', current: true },
 ]
 const navs = [
-  { name: 'About', href: '#', current: true },
+  { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
-  { name: 'Team', href: '/team', current: false },
+  { name: 'Team', href: '#', current: true },
 ]
 
-export default function About() {
+export default function Team() {
   return (
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
