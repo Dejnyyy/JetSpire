@@ -7,13 +7,13 @@ import Link from 'next/link';
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About', href: '/about', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Team', href: '/team', current: false },
 ]
 const navs = [
-  { name: 'About', href: '/about.tsx', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
+  { name: 'About', href: '/about', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Team', href: '/team', current: false },
 ]
 
 export default function Home() {
@@ -109,7 +109,6 @@ export default function Home() {
                   <strong className='text-white text-4xl font-mono font-semibold'>JETSPIRE</strong>
                   <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">We're here to help you reach the stars.</h3>
                   </div>
-                  
                 <div className='text-center'>
                 {navs.map((item) => (
                       <a
@@ -117,7 +116,7 @@ export default function Home() {
                         href={item.href}
                         className={clsx(
                           item.current ? 'bg-gray-900 text-white font-mono font-semibold text-lg' : 'mx-12 cursor-pointer font-mono font-semibold text-lg text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-3 py-2 text-sm font-semibold font-mono'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >

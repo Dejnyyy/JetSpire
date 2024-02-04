@@ -8,18 +8,18 @@ import Link from 'next/link';
 const navigation = [
   { name: 'Home', href: '/home', current: false },
   { name: 'About', href: '#', current: true },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Team', href: '/team', current: false },
 ]
 const navs = [
   { name: 'About', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Team', href: '/team', current: false },
 ]
 
 export default function About() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -61,8 +61,10 @@ export default function About() {
           </div>
           <section className='bg-black h-auto py-5'>
             <div className='flex items-center justify-center'>
-              <div><h1 className='text-center text-6xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
+              <div><h1 className=' text-lg text-white font-mono font-semibold'>About</h1>
+              <h1 className='text-center text-6xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
               <h1 className='text-center text-2xl text-white font-mono font-semibold'>AI - Marketing</h1>
+              
               </div>
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
                     alt="JetSpire Logo"
@@ -106,12 +108,12 @@ export default function About() {
             <div className='xl:mx-96 px-48 lg:mx-24 md:mx-12'>
                 <h1>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
                 <Link href='/form'>
-                    <button></button>
+                    <button className='bg-white mt-20 shadow-md shadow-white text-black rounded-lg py-1 px-3 hover:bg-slate-300'>Start your journey</button>
                 </Link>                        
             </div>
           </section>
 
-          <section>
+          <section className='pt-20 bg-black'>
             <footer>
               <div className='bg-black h-auto py-12'>
                 <div className='justify-center text-center xl:mx-96 lg:mx-48 sm:mx-12'>
