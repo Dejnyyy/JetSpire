@@ -2,11 +2,12 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx';
+import Link from 'next/link';
 
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/home', current: false },
+  { name: 'About', href: '#', current: true },
   { name: 'Contact', href: '#', current: false },
   { name: 'Team', href: '#', current: false },
 ]
@@ -16,7 +17,7 @@ const navs = [
   { name: 'Team', href: '#', current: false },
 ]
 
-export default function Home() {
+export default function About() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -45,20 +46,14 @@ export default function Home() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
+                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={clsx(
-                          item.current ? 'bg-gray-900 text-white font-mono font-semibold text-lg' : 'font-mono font-semibold text-lg text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href} key={item.name}>
+                        <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
+                      </Link>
                     ))}
+                  
                   </div>
                 </div>
               </div>
@@ -75,35 +70,15 @@ export default function Home() {
               </img>
             </div>
           </section>
-          <section className='bg-black h-auto py-12'>
-              <div className='justify-center text-center flex-auto items-center md:mx-24 lg:mx-48 sm:mx-12 xl:mx-96'>
-                <strong className='text-white text-3xl font-mono font-semibold'>Boosting You Beyond The Stratosphere!</strong>
-                <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">Welcome to Jetspire, your indispensable ally for scaling the elusive peaks of online visibility. We don't just sprinkle a few SEO keywords and call it a day! Our AI, tailored to your needs, crafts ingenious solutions helping you ascend to the zenith of the Google ranks - no ads attached.</h3>
+          <section className='bg-black h-auto py-8'>
+              <div className='justify-center  flex-auto items-center md:mx-36 lg:mx-56 sm:mx-12 xl:mx-96'>
+                <strong className='text-white text-6xl font-mono font-semibold'>How do we boost you beyond the stratosphere?</strong>
+                <h3 className="text-white text-xl font-mono font-semibold my-3  rounded-lg p-3 px-24">Welcome to Jetspire, where we redefine online visibility with cutting-edge AI-based marketing tools. One of our standout offerings is Programmatic SEO — a strategic approach that maximizes your reach and impact in the digital realm. Let's delve into how it works:</h3>
+                <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">1. Strategic Website Setup</h3>
+                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">We create a dynamic website acting as a comprehensive directory, meticulously optimized for SEO. Leveraging data from US or UK Census, we generate SEO-optimized pages for each keyword we target and every town or village within our specified area.</p>
               </div>
           </section>
-          <section className='bg-#8da9c4 h-auto py-12 mb-12'>
-              <div className='justify-center text-center mx-36 xl:mx-48'>
-                <strong className='text-white text-4xl font-mono font-semibold'>Satisfied Customers</strong>
-                <div className="columns-3 mt-12">
-
-                <div className="border rounded-lg p-4 m-1">
-                  <strong className='text-white text-2xl font-mono font-semibold'>"Discoverability Boost"</strong>  
-                  <p className="text-white text-lg font-mono px-3 mt-3">Since partnering with this SEO-savvy team, our business is now more visible on Google. It's not just numbers—it's real clicks and connections that are driving our success.</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- Propellr software</h1>
-                </div>  
-                <div className="border rounded-lg p-4 m-1">
-                  <strong className='text-white text-2xl font-mono font-semibold'>"Right fit for our brand"</strong>
-                  <p className="text-white text-lg font-mono font px-3 mt-3">Thanks to this service, our website now shines higher on Google. It's more than numbers—it means more people finding us and choosing our offerings. Great tool for boosting online visibility!</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- KoelR</h1>
-                </div>
-                <div className="border rounded-lg p-4 m-1">
-                  <strong className='text-white text-2xl font-mono font-semibold'>"From click to connection"</strong>
-                  <p className="text-white text-lg font-mono font px-3 mt-3">We've seen a positive shift in our online experience, all thanks to the improved Google ranking of our go-to brand. It's like they've become even more attuned to what we're looking for, making every click count.</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- FAI marketing</h1>
-                </div>
-              </div>  
-          </div>
-          </section>
+          
           <section className='bg-sky-900 pt-24'>
             <div className='xl:mx-96 px-48 lg:mx-24 md:mx-12'>
               <strong className='text-white text-4xl font-mono font-semibold '>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</strong>
