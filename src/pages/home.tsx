@@ -36,7 +36,7 @@ export default function Home() {
                 </Disclosure.Button>
               </div>
 
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
+            
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -59,15 +59,16 @@ export default function Home() {
               </div>
               </div>
             </div>
-          </div>
+       
           <section className='bg-black h-auto py-5'>
             <div className='flex items-center justify-center'>
-              <div><h1 className='text-center text-6xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
-              <h1 className='text-center text-2xl text-white font-mono font-semibold'>AI - Marketing</h1>
+              <div className=''>
+              <h1 className='text-center lg:text-6xl md:text-6xl sm:text-5xl text-4xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
+              <h1 className='text-center lg:text-2xl md:text-2xl sm:text-xl text-lg text-white font-mono font-semibold'>AI - Marketing</h1>
               </div>
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
                     alt="JetSpire Logo"
-                    className='w-96 my-48'>
+                    className='w-48 my-48 md:w-72 lg:w-96 xl:w-96 sm:w-64'>
               </img>
             </div>
           </section>
@@ -77,33 +78,34 @@ export default function Home() {
                 <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">Welcome to Jetspire, your indispensable ally for scaling the elusive peaks of online visibility. We don't just sprinkle a few SEO keywords and call it a day! Our AI, tailored to your needs, crafts ingenious solutions helping you ascend to the zenith of the Google ranks - no ads attached.</h3>
               </div>
           </section>
-          <section className='bg-#8da9c4 h-auto py-12 mb-12'>
-              <div className='justify-center text-center mx-36 xl:mx-48'>
+
+          <section className='bg-black h-auto py-12 mb-12'>
+              <div className='justify-center text-center mx-4 md:mx-12 xl:mx-48'>
                 <strong className='text-white text-4xl font-mono font-semibold'>Satisfied Customers</strong>
-                <div className="columns-3 mt-12 mx-48">
+                <div className="columns-1 mt-12 mx-24 lg:columns-1 xl:columns-3 md:columns-1">
 
                 <div className="border rounded-lg p-4 m-1">
-                  <h1 className='text-white text-2xl font-mono font-semibold p-1'>"Discoverability Boost"</h1>  
-                  <p className="text-white text-lg font-mono px-3 mt-3">Since partnering with this SEO-savvy team, our business is now more visible on Google. It's not just numbers—it's real clicks and connections that are driving our success.</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- Propellr software</h1>
+                  <h1 className='text-white md:text-xl xl:text-xl lg:text-2xl font-mono font-semibold p-1'>"Discoverability Boost"</h1>  
+                  <p className="text-white text-sm md:text-lg xl:text-md font-mono px-3 mt-3">Since partnering with this SEO-savvy team, our business is now more visible on Google. It's not just numbers—it's real clicks and connections that are driving our success.</p>
+                  <h1 className="text-white md:text-xl xl:text-lg lg:text-2xl font-mono font-semibold mt-3">- Propellr software</h1>
                 </div>  
                 <div className="border rounded-lg p-4 m-1">
-                  <h1 className='text-white text-2xl font-mono font-semibold p-1'>"Right fit for our brand"</h1>
-                  <p className="text-white text-lg font-mono font px-3 mt-3">Thanks to this service, our website now shines higher on Google. It's more than numbers—it means more people finding us and choosing our offerings. Great tool for boosting online visibility!</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- KoelR</h1>
+                  <h1 className='text-white md:text-xl xl:text-xl lg:text-2xl font-mono font-semibold p-1'>"Right fit for our brand"</h1>
+                  <p className="text-white text-sm md:text-lg xl:text-md font-mono font px-3 mt-3">Thanks to this service, our website now shines higher on Google. It's more than numbers—it means more people finding us and choosing our offerings. Great tool for boosting online visibility!</p>
+                  <h1 className="text-white md:text-xl xl:text-lg lg:text-2xl font-mono font-semibold mt-3">- KoelR</h1>
                 </div>
                 <div className="border rounded-lg p-4 m-1">
-                  <h1 className='text-white text-2xl font-mono font-semibold p-1'>"From click to connection"</h1>
-                  <p className="text-white text-lg font-mono font px-3 mt-3">We've seen a positive shift in our online experience, all thanks to the improved Google ranking of our go-to brand. It's like they've become even more attuned to what we're looking for, making every click count.</p>
-                  <h1 className="text-white text-xl font-mono font-semibold mt-3">- FAI marketing</h1>
+                  <h1 className='text-white md:text-xl xl:text-xl lg:text-2xl font-mono font-semibold p-1'>"From click to connection"</h1>
+                  <p className="text-white text-sm md:text-lg xl:text-md font-mono font px-3 mt-3">We've seen a positive shift in our online experience, all thanks to the improved Google ranking of our go-to brand. It's like they've become even more attuned to what we're looking for, making every click count.</p>
+                  <h1 className="text-white md:text-xl xl:text-lg lg:text-2xl font-mono font-semibold mt-3">- FAI marketing</h1>
                 </div>
               </div>  
           </div>
           </section>
           <section className='bg-black pt-24'>
-            <div className='xl:mx-96 px-48 lg:mx-24 md:mx-12'>
-              <strong className='text-white text-4xl font-mono font-semibold '>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</strong>
-              <iframe className='py-12 xl:w-full lg:w-full md:w-full sm:w-full' title="vimeo-player" src="https://player.vimeo.com/video/891487351?h=2b6cd90213" width="1280" height="720" allowFullScreen></iframe>
+            <div className='xl:mx-96 px-12 lg:mx-24 md:mx-12'>
+              <h1 className='text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono font-semibold '>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
+              <iframe className='py-12 w-96 h-80 justify-center text-center lg:w-full lg:h-full' title="vimeo-player" src="https://player.vimeo.com/video/891487351?h=2b6cd90213" width="640" height="360" allowFullScreen></iframe>
             </div>
           </section>
           <section>

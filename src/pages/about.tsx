@@ -61,20 +61,20 @@ export default function About() {
           </div>
           <section className='bg-black h-auto py-5'>
             <div className='flex items-center justify-center'>
-              <div><h1 className=' text-lg text-white font-mono font-semibold'>About</h1>
-              <h1 className='text-center text-6xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
-              <h1 className='text-center text-2xl text-white font-mono font-semibold'>AI - Marketing</h1>
-              
+              <div>
+              <h1 className=' text-lg text-white font-mono font-semibold'>About</h1>
+              <h1 className='text-center lg:text-6xl md:text-4xl sm:text-4xl text-2xl text-white font-mono font-semibold cursor-pointer'>JETSPIRE</h1>
+              <h1 className='text-center lg:text-2xl md:text-xl sm:text-lg text-md text-white font-mono font-semibold'>AI - Marketing</h1>
               </div>
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
                     alt="JetSpire Logo"
-                    className='w-96 my-48'>
+                    className='w-24 my-48 md:w-48 lg:w-96 xl:w-96 sm:w-36'>
               </img>
             </div>
           </section>
           <section className='bg-black h-auto py-8'>
               <div className='justify-center  flex-auto items-center md:mx-36 lg:mx-56 sm:mx-12 xl:mx-96'>
-                <strong className='text-white text-6xl font-mono font-semibold'>How do we boost you beyond the stratosphere?</strong>
+                <h1 className='text-white lg:text-6xl md:text-4xl sm:text-4xl text-2xl px-8  font-mono font-semibold'>How do we boost you beyond the stratosphere?</h1>
                 <h3 className="text-white text-xl font-mono font-semibold my-3  rounded-lg p-3 px-24">Welcome to Jetspire, where we redefine online visibility with cutting-edge AI-based marketing tools. One of our standout offerings is Programmatic SEO — a strategic approach that maximizes your reach and impact in the digital realm. Let's delve into how it works:</h3>
                 
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">1. Strategic Website Setup</h3>
@@ -105,7 +105,7 @@ export default function About() {
           </section>
           
           <section className='bg-black text-3xl text-white   pt-24'>
-            <div className='xl:mx-96 px-48 lg:mx-24 md:mx-12'>
+            <div className='xl:mx-96 px-8 lg:mx-24 md:mx-12 mx-4'>
                 <h1 className='font-mono font-semibold text-left'>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
                 <div className='text-center'> 
                 <Link href='/contact'>
