@@ -69,6 +69,7 @@ export default function Home() {
               </div>
               </div>
             </div>
+            
             <section className='bg-black h-auto py-5'>
             <div className='flex items-center justify-center'>
               <div>
@@ -80,6 +81,32 @@ export default function Home() {
                     alt="JetSpire Logo"
                     className='w-24 my-48 md:w-48 lg:w-96 xl:w-96 sm:w-36'>
               </img>
+            </div>
+          </section>
+          <section>
+            <div className="">
+                <div className="mb-5">
+                    <h1 className='text-center text-5xl font-mono text-white font-semibold'>Ready for lift off?</h1>
+                </div>
+                <form className=" mx-auto flex-col flex w-1/3 border p-4 rounded-lg font-mono font-semibold">
+                    <label className='text-white text-lg'>Name</label>
+                    <input type="text" placeholder="Name" className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Last Name</label>
+                    <input type="text" placeholder="Last Name" className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Organization</label>
+                    <input type="text" placeholder="Organization" className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Email*</label>
+                    <input type="text" placeholder="Email" required className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Phone*</label>
+                    <input type="text" placeholder="Phone" required className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Web URL</label>
+                    <input type="text" placeholder="Web URL goes here" className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    <label className='text-white text-lg'>Address</label>
+                    <input type="text" placeholder="Address" className='border-2 border-black rounded-lg p-2 my-2'></input>
+                    
+                    <input type='checkbox'className='w-4 h-4'></input><p className='text-white text-md'>* I agree to <Link href='/terms&conditions'>terms & conditions</Link> provided by the company. By providing my phone number, I agree to receive text messages from the business.</p>
+                    <input type='submit' value='Submit' className='bg-black text-white rounded-lg cursor-pointer border p-2 my-2'></input>
+                </form>
             </div>
           </section>
           <section>
