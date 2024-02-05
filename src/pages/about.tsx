@@ -149,8 +149,8 @@ export default function About() {
                     
                 </div>
                 <div>
-                      <p className='text-white text-lg font-mono font-semibold  text-center mt-5'>&copy;2024</p>
-                    </div>
+                    <p className='text-white text-lg font-mono font-semibold  text-center mt-5'>&copy;2024</p>
+                </div>
               </div>
             </footer>
           </section>
