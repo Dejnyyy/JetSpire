@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  next-app:
+    container_name: jetspire
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3010:3000
+
