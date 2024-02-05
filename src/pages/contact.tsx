@@ -5,9 +5,9 @@ import clsx from 'clsx';
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '/home', current: false },
   { name: 'About', href: '/about', current: false },
-  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Contact', href: '#', current: true },
   { name: 'Team', href: '/team', current: false },
 ]
 
