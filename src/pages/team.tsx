@@ -19,7 +19,6 @@ export default function Team() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-             
               <div className=" inset-y-0  flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -49,10 +48,8 @@ export default function Team() {
                 </Disclosure.Button>
               ))}
                 </div>
-             
             </div>
           </Disclosure.Panel>
-
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -62,14 +59,12 @@ export default function Team() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
-                  
                   </div>
                 </div>
               </div>
@@ -116,11 +111,7 @@ export default function Team() {
                     </div>
                 </div>
               </div>
-              
           </section>
-          
-         
-
           <section className='pt-20 bg-black'>
           <footer>
               <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
@@ -136,7 +127,6 @@ export default function Team() {
                         <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
-                    
                 </div>
                 <div>
                       <p className='text-white text-lg font-mono font-semibold  text-center mt-5'>&copy;2024</p>
@@ -147,6 +137,5 @@ export default function Team() {
         </>
       )}
     </Disclosure>
-   
   )
 } 

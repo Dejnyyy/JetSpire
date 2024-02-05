@@ -19,7 +19,6 @@ export default function About() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-             
               <div className=" inset-y-0  flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -49,10 +48,8 @@ export default function About() {
                 </Disclosure.Button>
               ))}
                 </div>
-             
             </div>
           </Disclosure.Panel>
-
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -62,14 +59,12 @@ export default function About() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
-                  
                   </div>
                 </div>
               </div>
@@ -92,45 +87,32 @@ export default function About() {
               <div className='justify-center  flex-auto items-center md:mx-36 lg:mx-56 sm:mx-12 xl:mx-96'>
                 <h1 className='text-white lg:text-6xl md:text-4xl sm:text-4xl text-2xl px-8  font-mono font-semibold'>How do we boost you beyond the stratosphere?</h1>
                 <h3 className="text-white text-xl font-mono font-semibold my-3  rounded-lg p-3 px-24">Welcome to Jetspire, where we redefine online visibility with cutting-edge AI-based marketing tools. One of our standout offerings is Programmatic SEO — a strategic approach that maximizes your reach and impact in the digital realm. Let's delve into how it works:</h3>
-                
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">1. Strategic Website Setup</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">We create a dynamic website acting as a comprehensive directory, meticulously optimized for SEO. Leveraging data from US or UK Census, we generate SEO-optimized pages for each keyword we target and every town or village within our specified area.</p>
-                
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">We create a dynamic website acting as a comprehensive directory, meticulously optimized for SEO. Leveraging data from US or UK Census, we generate SEO-optimized pages for each keyword we target and every town or village within our specified area.</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">2. Population and Demographics Integration</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">The number of pages directly correlates with the number of keywords and towns/villages. For instance, if we target "pest control" with 3 keywords and 100 towns/villages, we generate 300 pages. Each page is tailored to a specific combination, such as "pest control Round Rock Texas."</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">The number of pages directly correlates with the number of keywords and towns/villages. For instance, if we target "pest control" with 3 keywords and 100 towns/villages, we generate 300 pages. Each page is tailored to a specific combination, such as "pest control Round Rock Texas."</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">3. Precision Optimization</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">These pages are more than just content; they are fine-tuned for SEO success. We employ meta tags and schema to optimize each page and seamlessly link it to the business profile. Ideally, this directory resides on a subdomain of your company website, forging a strong association with Google.</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">These pages are more than just content; they are fine-tuned for SEO success. We employ meta tags and schema to optimize each page and seamlessly link it to the business profile. Ideally, this directory resides on a subdomain of your company website, forging a strong association with Google.</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">4. Analytics Integration</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">The directory site is equipped with a separate Google Analytics setup and Google Webmaster Tools. We proactively submit a sitemap to Google, ensuring swift indexing of pages. Our goal is to secure top 3 positions in search results for the targeted keywords.</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">The directory site is equipped with a separate Google Analytics setup and Google Webmaster Tools. We proactively submit a sitemap to Google, ensuring swift indexing of pages. Our goal is to secure top 3 positions in search results for the targeted keywords.</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">5. User Engagement Tracking</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">When users discover and engage with these pages, their interactions are meticulously tracked through Google Analytics. This engagement is crucial, especially when visitors are located in the corresponding town/village. The content is optimized for both the keyword and location, sending strong signals to Google that someone actively sought that specific service in that area.</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">When users discover and engage with these pages, their interactions are meticulously tracked through Google Analytics. This engagement is crucial, especially when visitors are located in the corresponding town/village. The content is optimized for both the keyword and location, sending strong signals to Google that someone actively sought that specific service in that area.</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">6. Closing the Loop with Reviews</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">A positive loop is completed when engaged visitors, satisfied with the information, leave reviews. This feedback significantly enhances the impact on the local 3-pack results, establishing your business prominently in local searches.</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">A positive loop is completed when engaged visitors, satisfied with the information, leave reviews. This feedback significantly enhances the impact on the local 3-pack results, establishing your business prominently in local searches.</p>
                 <h3 className="text-white text-xl font-mono font-semibold rounded-lg p-3 px-24">Why Programmatic SEO Works</h3>
-                <p  className="text-white text-lg font-mono    rounded-lg p-5 px-24">Precision Targeting: By aligning content with specific keywords and locations, we optimize your visibility where it matters most.User-Centric Engagement: User interactions are actively tracked, providing valuable insights into their needs and preferences. Google Association: The strategic setup enhances Google's association between your business and the targeted locations, elevating your online presence.</p>
-             
+                <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">Precision Targeting: By aligning content with specific keywords and locations, we optimize your visibility where it matters most.User-Centric Engagement: User interactions are actively tracked, providing valuable insights into their needs and preferences. Google Association: The strategic setup enhances Google's association between your business and the targeted locations, elevating your online presence.</p>
                 <p  className="text-white text-lg font-mono rounded-lg p-5 px-24">At Jetspire, Programmatic SEO isn't just a service; it's a tailored approach to amplify your digital footprint. Let us propel your business to the forefront of online visibility and local search results. Discover the power of Programmatic SEO with Jetspire today!</p>
-             
               </div>
-              
           </section>
-          
           <section className='bg-black text-3xl text-white   pt-24'>
             <div className='xl:mx-96 px-8 lg:mx-24 md:mx-12 mx-4'>
                 <h1 className='font-mono font-semibold text-left'>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
                 <div className='text-center'> 
                 <Link href='/contact'>
                     <button className='bg-white  mt-20 shadow-md shadow-white font-mono font-semibold text-black rounded-full py-2 px-8 hover:bg-slate-300'>Start your journey</button>
-                </Link></div>
-                                       
+                </Link></div>                  
             </div>
           </section>
-
           <section className='pt-20 bg-black'>
           <footer>
               <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
@@ -146,7 +128,6 @@ export default function About() {
                         <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
-                    
                 </div>
                 <div>
                     <p className='text-white text-lg font-mono font-semibold  text-center mt-5'>&copy;2024</p>
@@ -154,14 +135,8 @@ export default function About() {
               </div>
             </footer>
           </section>
-
-
-
-
-        
         </>
       )}
     </Disclosure>
-   
   )
 } 

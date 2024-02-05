@@ -18,7 +18,6 @@ export default function Home() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-             
               <div className=" inset-y-0  flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -47,11 +46,9 @@ export default function Home() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-                    </div>
-             
+                </div>
             </div>
           </Disclosure.Panel>
-            
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -61,20 +58,17 @@ export default function Home() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name}>
                         <p className="text-white font-mono font-semibold ml-2 text-lg hover:bg-gray-700 hover:text-white rounded-lg py-1 px-3">{item.name}</p>
                       </Link>
                     ))}
-                  
                   </div>
                 </div>
               </div>
               </div>
             </div>
-       
           <section className='bg-black h-auto py-5'>
             <div className='flex items-center justify-center'>
               <div className=''>
@@ -93,12 +87,10 @@ export default function Home() {
                 <h3 className="text-white text-xl font-mono font-semibold my-5  rounded-lg p-5 px-24">Welcome to Jetspire, your indispensable ally for scaling the elusive peaks of online visibility. We don't just sprinkle a few SEO keywords and call it a day! Our AI, tailored to your needs, crafts ingenious solutions helping you ascend to the zenith of the Google ranks - no ads attached.</h3>
               </div>
           </section>
-
           <section className='bg-black h-auto py-12 mb-12'>
               <div className='justify-center text-center mx-4 md:mx-12 xl:mx-48'>
                 <strong className='text-white text-4xl font-mono font-semibold'>Satisfied Customers</strong>
                 <div className="columns-1 mt-12 mx-24 lg:columns-1 xl:columns-3 md:columns-1">
-
                 <div className="border rounded-lg p-4 m-1">
                   <h1 className='text-white md:text-xl xl:text-xl lg:text-2xl font-mono font-semibold p-1'>"Discoverability Boost"</h1>  
                   <p className="text-white text-sm md:text-lg xl:text-md font-mono px-3 mt-3">Since partnering with this SEO-savvy team, our business is now more visible on Google. It's not just numbers—it's real clicks and connections that are driving our success.</p>
@@ -117,14 +109,12 @@ export default function Home() {
               </div>  
           </div>
           </section>
-
           <section className='bg-black pt-24'>
             <div className='xl:mx-48 px-12 lg:mx-24 md:mx-12'>
               <h1 className='text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono font-semibold '>Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of success together!</h1>
               <iframe className='py-12 justify-center text-center lg:w-full md:w-full sm:w-full w-full' title="vimeo-player" src="https://player.vimeo.com/video/891487351?h=2b6cd90213" width="1280" height="720" allowFullScreen></iframe>
             </div>
           </section>
-
           <section>
             <footer>
               <div className='bg-black h-auto pt-8 pb-5 border-t border-white'>
@@ -150,6 +140,5 @@ export default function Home() {
         </>
       )}
     </Disclosure>
-   
   )
 } 
