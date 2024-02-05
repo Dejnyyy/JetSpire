@@ -88,7 +88,7 @@ export default function Home() {
                 <div className="mb-5">
                     <h1 className='text-center text-5xl font-mono text-white font-semibold'>Ready for lift off?</h1>
                 </div>
-                <form className=" mx-auto flex-col flex w-1/3 border p-4 rounded-lg font-mono font-semibold">
+                <form className=" mx-auto flex-col mb-12  flex w-1/3 border p-4 rounded-lg font-mono font-semibold">
                     <label className='text-white text-lg'>Name</label>
                     <input type="text" placeholder="Name" className='border-2 border-black rounded-lg p-2 my-2'></input>
                     <label className='text-white text-lg'>Last Name</label>
@@ -104,8 +104,8 @@ export default function Home() {
                     <label className='text-white text-lg'>Address</label>
                     <input type="text" placeholder="Address" className='border-2 border-black rounded-lg p-2 my-2'></input>
                     
-                    <input type='checkbox'className='w-4 h-4'></input><p className='text-white text-md'>* I agree to <Link href='/terms&conditions'>terms & conditions</Link> provided by the company. By providing my phone number, I agree to receive text messages from the business.</p>
-                    <input type='submit' value='Submit' className='bg-black text-white rounded-lg cursor-pointer border p-2 my-2'></input>
+                    <input type='checkbox'className='w-4 h-4'></input><p className='text-white text-md'>* I agree to <Link href='/terms&conditions' className='text-blue-500'>terms & conditions</Link> provided by the company. By providing my phone number, I agree to receive text messages from the business.</p>
+                    <input type='submit' value='Submit' className='bg-black text-white rounded-lg cursor-pointer font-extrabold border p-2 my-2'></input>
                 </form>
             </div>
           </section>
