@@ -1,6 +1,5 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -32,12 +31,8 @@ export default function About() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className={clsx(
-                          item.current
-                            ? "bg-gray-900 font-mono text-lg font-semibold text-white"
-                            : "font-mono text-lg font-semibold text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "block rounded-md px-3 py-2 text-base font-medium",
-                        )}
+                        className={"bg-gray-900 font-mono text-lg font-semibold text-white"
+                    }
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
