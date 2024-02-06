@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
-import { navigation } from "./components/navigation";
+import { navigation } from "../../components/navigation";
 
 export default function About() {
   return (
