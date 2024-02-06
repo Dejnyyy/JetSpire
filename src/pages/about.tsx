@@ -31,9 +31,9 @@ export default function About() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className={"bg-gray-900 font-mono text-lg font-semibold text-white"
-                    }
-                        aria-current={item.current ? "page" : undefined}
+                        className={
+                          "bg-gray-900 font-mono text-lg font-semibold text-white"
+                        }
                       >
                         {item.name}
                       </Disclosure.Button>
@@ -79,7 +79,7 @@ export default function About() {
                 </h1>
               </div>
               <Image
-                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                src="/logo.webp"
                 alt="JetSpire Logo"
                 className="my-48 w-36 sm:w-48 md:w-64 lg:w-96 xl:w-96"
                 width={1200}
