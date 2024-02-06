@@ -1,6 +1,5 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -32,13 +31,9 @@ export default function Home() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className={clsx(
-                          item.current
-                            ? "bg-gray-900 font-mono text-lg font-semibold text-white"
-                            : "font-mono text-lg font-semibold text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "block rounded-md px-3 py-2 text-base font-medium",
-                        )}
-                        aria-current={item.current ? "page" : undefined}
+                        className={
+                          "bg-gray-900 font-mono text-lg font-semibold text-white"
+                        }
                       >
                         {item.name}
                       </Disclosure.Button>
@@ -81,7 +76,7 @@ export default function Home() {
                 </h1>
               </div>
               <Image
-                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                src="/logo.webp"
                 alt="JetSpire Logo"
                 className="my-48 w-48 sm:w-64 md:w-72 lg:w-96 xl:w-96"
                 width={1200}
@@ -94,7 +89,7 @@ export default function Home() {
               <strong className="font-mono text-3xl font-semibold text-white">
                 Boosting You Beyond The Stratosphere!
               </strong>
-              <h3 className="my-5 rounded-lg p-5 px-24 font-mono  text-xl font-semibold text-white">
+              <h3 className="my-5 rounded-lg p-5 text-left font-mono  text-xl font-semibold text-white">
                 Welcome to Jetspire, your indispensable ally for scaling the
                 elusive peaks of online visibility. We don't just sprinkle a few
                 SEO keywords and call it a day! Our AI, tailored to your needs,
@@ -104,10 +99,10 @@ export default function Home() {
             </div>
           </section>
           <section className="mb-12 h-auto bg-black py-12">
-            <div className="mx-4 justify-center text-center md:mx-12 xl:mx-48">
-              <strong className="font-mono text-4xl font-semibold text-white">
-                Satisfied Customers
-              </strong>
+            <h2 className="font-mono text-4xl font-semibold text-white">
+              Satisfied Customers
+            </h2>
+            <div className="grid grid-cols-1 justify-between gap-y-6 text-center">
               <div className="mx-24 mt-12 columns-1 md:columns-1 lg:columns-1 xl:columns-3">
                 <div className="m-1 rounded-lg border p-4">
                   <h1 className="p-1 font-mono font-semibold text-white md:text-xl lg:text-2xl xl:text-xl">
