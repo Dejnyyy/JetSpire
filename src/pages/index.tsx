@@ -1,16 +1,10 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
-const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Contact", href: "/contact", current: false },
-  { name: "Team", href: "/team", current: false },
-];
+import { navigation } from "./components/navigation";
 
 export default function Home() {
   return (
@@ -56,8 +50,10 @@ export default function Home() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto cursor-pointer"
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                    src="/logo.webp"
                     alt="JetSpire Logo"
+                    width={1200}
+                    height={1200}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -88,6 +84,8 @@ export default function Home() {
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
                 alt="JetSpire Logo"
                 className="my-48 w-48 sm:w-64 md:w-72 lg:w-96 xl:w-96"
+                width={1200}
+                height={1200}
               />
             </div>
           </section>

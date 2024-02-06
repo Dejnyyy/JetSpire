@@ -1,16 +1,10 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
-const navigation = [
-  { name: "Home", href: "/home", current: false },
-  { name: "About", href: "/about", current: false },
-  { name: "Contact", href: "/contact", current: false },
-  { name: "Team", href: "#", current: true },
-];
+import { navigation } from "./components/navigation";
 
 export default function Team() {
   return (
@@ -56,8 +50,10 @@ export default function Team() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto cursor-pointer"
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                    src="/logo.webp"
                     alt="JetSpire Logo"
+                    width={1200}
+                    height={1200}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -88,9 +84,11 @@ export default function Team() {
                 </h1>
               </div>
               <Image
-                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                src="/logo.webp"
                 alt="JetSpire Logo"
                 className="my-48 w-24 sm:w-36 md:w-48 lg:w-96 xl:w-96"
+                width={1200}
+                height={1200}
               />
             </div>
           </section>
@@ -99,17 +97,19 @@ export default function Team() {
               <h1 className="px-8 font-mono text-2xl font-semibold text-white sm:text-4xl  md:text-4xl lg:text-6xl">
                 Team
               </h1>
-              <div className="mx-12 mt-12 columns-1 py-4 pb-12 font-mono text-white md:columns-1 lg:columns-1 xl:columns-3">
+              <div className="mx-12 mt-12 grid grid-cols-1 gap-6 text-justify font-mono text-white lg:grid-cols-3 lg:text-center">
                 <div className="">
                   <Image
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/658c1f6225e0d69a669e1e1a.jpeg"
+                    src="/bastian.webp"
                     alt="bastian"
                     className="mb-5"
+                    width={1200}
+                    height={800}
                   />
                   <h1 className=" font-semibold md:text-xl lg:text-2xl xl:text-xl">
                     Say hello to Bastiaan,
                   </h1>
-                  <p className="p-4 sm:p-1">
+                  <p className="pt-3">
                     our decisive team captain. With a clear vision and a "less
                     is more" mentality, he navigates our course with sharp
                     decisions, pointing the way without unnecessary push.
@@ -117,14 +117,16 @@ export default function Team() {
                 </div>
                 <div className="">
                   <Image
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/658c1fece00b873d96225c31.jpeg"
+                    src="/frank.webp"
                     alt="frank"
-                    className="m-auto my-5 justify-center text-center xl:h-72"
+                    className="mb-5"
+                    width={1065}
+                    height={1123}
                   />
                   <h1 className="font-semibold md:text-xl lg:text-2xl xl:text-xl">
                     Meet Frank,
                   </h1>
-                  <p className="p-4 sm:p-1">
+                  <p className="pt-3">
                     our technical wizard and creative maestro. Turning ideas
                     into reality is his forte. No challenge is too big, no
                     concept too daring. Frank makes the impossible possible.
@@ -132,14 +134,16 @@ export default function Team() {
                 </div>
                 <div className="">
                   <Image
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/658c1f5e096557df03b5f881.jpeg"
+                    src="/oliver.webp"
                     alt="oliver"
-                    className="my-5"
+                    className="mb-5"
+                    width={1200}
+                    height={800}
                   />
                   <h1 className="font-semibold md:text-xl lg:text-2xl xl:text-xl">
                     Introducing Olivier,
                   </h1>
-                  <p className="p-4 sm:p-1">
+                  <p className="pt-3">
                     the powerhouse behind our communication and the mastermind
                     steering the team. His professionalism is unmatched, and his
                     smile makes working with him a true delight.

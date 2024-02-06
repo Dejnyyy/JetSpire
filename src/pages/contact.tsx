@@ -1,16 +1,10 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
-const navigation = [
-  { name: "Home", href: "/home", current: false },
-  { name: "About", href: "/about", current: false },
-  { name: "Contact", href: "#", current: true },
-  { name: "Team", href: "/team", current: false },
-];
+import { navigation } from "./components/navigation";
 
 export default function Home() {
   return (
@@ -56,8 +50,10 @@ export default function Home() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto cursor-pointer"
-                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
+                    src="/logo.webp"
                     alt="JetSpire Logo"
+                    width={1200}
+                    height={1200}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -74,7 +70,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <section className="h-auto bg-black py-5">
             <div className="flex items-center justify-center">
               <div>
@@ -92,17 +87,19 @@ export default function Home() {
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/46gdLUn891cmJZxfzaRR/media/656b59cc0af0f785e2951c2d.png"
                 alt="JetSpire Logo"
                 className="my-48 w-24 sm:w-36 md:w-48 lg:w-96 xl:w-96"
+                width={1200}
+                height={1200}
               />
             </div>
           </section>
           <section>
             <div className="">
               <div className="mb-5">
-                <h1 className="text-center font-mono text-5xl font-semibold text-white">
+                <h1 className="text-center font-mono text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-6xl">
                   Ready for lift off?
                 </h1>
               </div>
-              <form className=" mx-auto mb-12 flex  w-1/3 flex-col rounded-lg border p-4 font-mono font-semibold">
+              <form className=" mx-auto mb-12 flex  w-3/4 flex-col rounded-lg border p-4 font-mono font-semibold md:w-2/3 lg:w-1/2">
                 <label className="text-lg text-white">Name</label>
                 <input
                   type="text"
@@ -147,15 +144,17 @@ export default function Home() {
                   placeholder="Address"
                   className="my-2 rounded-lg border-2 border-black p-2"
                 ></input>
-                <input type="checkbox" className="h-4 w-4"></input>
-                <p className="text-md text-white">
-                  * I agree to{" "}
-                  <Link href="/terms&conditions" className="text-blue-500">
-                    terms & conditions
-                  </Link>{" "}
-                  provided by the company. By providing my phone number, I agree
-                  to receive text messages from the business.
-                </p>
+                <div className="flex">
+                  <input type="checkbox" className="mr-2 h-4 w-4"></input>
+                  <p className="text-md text-white">
+                    I agree to{" "}
+                    <Link href="/terms&conditions" className="text-blue-500">
+                      terms & conditions
+                    </Link>{" "}
+                    provided by the company. By providing my phone number, I
+                    agree to receive text messages from the business.
+                  </p>
+                </div>
                 <input
                   type="submit"
                   value="Submit"
