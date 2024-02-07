@@ -103,12 +103,12 @@ export default function Home() {
               Satisfied Customers
             </h2>
             <div className=" text-center">
-              <div className="mx-8  lg:mx-24 mt-12  grid grid-cols-1 gap-6 lg:grid-cols-3">
+              <div className="mx-8 lg:mx-24 mt-12  grid grid-cols-1 gap-6 lg:grid-cols-3">
                 <div className="m-1 rounded-lg border py-2">
-                  <h1 className="p-1  mt-3 font-mono font-semibold text-white md:text-xl  xl:text-xl">
+                  <h1 className="p-1 mt-3 font-mono font-semibold text-white md:text-xl  xl:text-xl">
                     "Discoverability Boost"
                   </h1>
-                  <p className="xl:text-md mt-3 px-3 font-mono text-sm text-white md:text-lg">
+                  <p className="xl:text-md mt-3 px-2 font-mono text-sm text-white md:text-lg">
                     Since partnering with this SEO-savvy team, our business is
                     now more visible on Google. It's not just numbers—it's real
                     clicks and connections that are driving our success.
@@ -117,11 +117,11 @@ export default function Home() {
                     - Propellr software
                   </h1>
                 </div>
-                <div className="m-1 rounded-lg border p-4">
+                <div className="m-1 rounded-lg border py-2">
                   <h1 className="p-1 font-mono font-semibold text-white md:text-xl lg:text-2xl xl:text-xl">
                     "Right fit for our brand"
                   </h1>
-                  <p className="xl:text-md font mt-3 px-3 font-mono text-sm text-white md:text-lg">
+                  <p className="xl:text-md font mt-3 px-2 font-mono text-sm text-white md:text-lg">
                     Thanks to this service, our website now shines higher on
                     Google. It's more than numbers—it means more people finding
                     us and choosing our offerings. Great tool for boosting
@@ -131,11 +131,11 @@ export default function Home() {
                     - KoelR
                   </h1>
                 </div>
-                <div className="m-1 rounded-lg border p-4">
+                <div className="m-1 rounded-lg border py-2">
                   <h1 className="p-1 font-mono font-semibold text-white md:text-xl lg:text-2xl xl:text-xl">
                     "From click to connection"
                   </h1>
-                  <p className="xl:text-md font mt-3 px-3 font-mono text-sm text-white md:text-lg">
+                  <p className="xl:text-md font mt-3 px-2 font-mono text-sm text-white md:text-lg">
                     We've seen a positive shift in our online experience, all
                     thanks to the improved Google ranking of our go-to brand.
                     It's like they've become even more attuned to what we're
@@ -148,14 +148,14 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="bg-black pt-24">
-            <div className="px-12 md:mx-12 lg:mx-24 xl:mx-48">
-              <h1 className="font-mono text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ">
+          <section className="bg-black pt-12">
+            <div className="px-12 md:mx-12 xl:mx-48">
+              <h3 className="font-mono text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ">
                 Ready for lift-off? Join us on an incredible journey and let's
                 soar to the stellar heights of success together!
-              </h1>
+              </h3>
               <iframe
-                className="w-full justify-center py-12 text-center sm:w-full md:w-full lg:w-full"
+                className="w-full justify-center text-center sm:w-full md:w-full lg:w-full"
                 title="vimeo-player"
                 src="https://player.vimeo.com/video/891487351?h=2b6cd90213"
                 width="1280"
