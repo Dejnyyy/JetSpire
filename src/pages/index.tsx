@@ -89,7 +89,7 @@ export default function Home() {
               <strong className="font-mono text-3xl font-semibold text-white">
                 Boosting You Beyond The Stratosphere!
               </strong>
-              <h3 className="my-5 rounded-lg p-5 text-left font-mono  text-xl font-semibold text-white">
+              <h3 className="my-3 rounded-lg p-5 text-left font-mono  text-xl font-semibold text-white">
                 Welcome to Jetspire, your indispensable ally for scaling the
                 elusive peaks of online visibility. We don't just sprinkle a few
                 SEO keywords and call it a day! Our AI, tailored to your needs,
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
           </section>
           <section className="mb-12 h-auto bg-black py-12">
-            <h2 className="font-mono text-4xl font-semibold text-white">
+            <h2 className="font-mono text-2xl md:text-4xl text-center font-semibold text-white">
               Satisfied Customers
             </h2>
             <div className="grid grid-cols-1 justify-between gap-y-6 text-center">
