@@ -71,7 +71,7 @@ export default function Home() {
                 <h1 className=" font-mono text-lg font-semibold text-white">
                   Contact
                 </h1>
-                <h1 className="cursor-pointer text-center font-mono text-6xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
+                <h1 className="cursor-pointer text-center font-mono text-5xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
                   JETSPIRE
                 </h1>
                 <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">

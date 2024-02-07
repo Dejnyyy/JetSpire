@@ -25,14 +25,14 @@ export default function Home() {
               </div>
               <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
-                  <div className="flex">
+                  <div className="flex ">
                     {navigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
                         as="a"
                         href={item.href}
                         className={
-                          "bg-gray-900 font-mono text-lg font-semibold text-white"
+                          "bg-gray-900 font-mono text-md m-1 py-1 px-2 rounded-md font-semibold text-white"
                         }
                       >
                         {item.name}
@@ -68,7 +68,7 @@ export default function Home() {
           <section className="h-auto bg-black py-5">
             <div className="flex items-center justify-center">
               <div>
-                <h1 className="cursor-pointer text-center font-mono text-6xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
+                <h1 className="cursor-pointer text-center font-mono text-5xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
                   JETSPIRE
                 </h1>
                 <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
