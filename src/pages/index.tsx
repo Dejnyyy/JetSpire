@@ -25,14 +25,14 @@ export default function Home() {
               </div>
               <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
-                  <div className="flex">
+                  <div className="flex ">
                     {navigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
                         as="a"
                         href={item.href}
                         className={
-                          "bg-gray-900 font-mono text-lg font-semibold text-white"
+                          "bg-gray-900 font-mono text-md m-1 py-1 px-2 rounded-md font-semibold text-white"
                         }
                       >
                         {item.name}
@@ -44,7 +44,7 @@ export default function Home() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
-                    className="h-8 w-auto cursor-pointer"
+                    className="h-8 w-auto cursor-pointer hidden sm:block"
                     src="/logo.webp"
                     alt="JetSpire Logo"
                     width={1200}
@@ -67,18 +67,18 @@ export default function Home() {
           </div>
           <section className="h-auto bg-black py-5">
             <div className="flex items-center justify-center">
-              <div className="">
-                <h1 className="cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-6xl">
+              <div>
+                <h1 className="cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
                   JETSPIRE
                 </h1>
-                <h1 className="text-center font-mono text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-2xl">
+                <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
                   AI - Marketing
                 </h1>
               </div>
               <Image
                 src="/logo.webp"
                 alt="JetSpire Logo"
-                className="my-48 w-48 sm:w-64 md:w-72 lg:w-96 xl:w-96"
+                className="my-48 w-24 sm:w-48 md:w-64 lg:w-96 xl:w-96"
                 width={1200}
                 height={1200}
               />
@@ -86,10 +86,10 @@ export default function Home() {
           </section>
           <section className="h-auto bg-black py-12">
             <div className="flex-auto items-center justify-center text-center sm:mx-12 md:mx-24 lg:mx-48 xl:mx-96">
-              <strong className="font-mono text-3xl font-semibold text-white">
+              <strong className="font-mono text-2xl font-semibold text-white">
                 Boosting You Beyond The Stratosphere!
               </strong>
-              <h3 className="my-5 rounded-lg p-5 text-left font-mono  text-xl font-semibold text-white">
+              <h3 className="my-3 rounded-lg p-5 text-left font-mono  text-lg  text-white">
                 Welcome to Jetspire, your indispensable ally for scaling the
                 elusive peaks of online visibility. We don't just sprinkle a few
                 SEO keywords and call it a day! Our AI, tailored to your needs,
@@ -99,13 +99,13 @@ export default function Home() {
             </div>
           </section>
           <section className="mb-12 h-auto bg-black py-12">
-            <h2 className="font-mono text-4xl font-semibold text-white">
+            <h2 className="font-mono text-2xl md:text-4xl text-center font-semibold text-white">
               Satisfied Customers
             </h2>
-            <div className="grid grid-cols-1 justify-between gap-y-6 text-center">
-              <div className="mx-24 mt-12 columns-1 md:columns-1 lg:columns-1 xl:columns-3">
-                <div className="m-1 rounded-lg border p-4">
-                  <h1 className="p-1 font-mono font-semibold text-white md:text-xl lg:text-2xl xl:text-xl">
+            <div className=" text-center">
+              <div className="mx-8  lg:mx-24 mt-12  grid grid-cols-1 gap-6 lg:grid-cols-3">
+                <div className="m-1 rounded-lg border py-2">
+                  <h1 className="p-1  mt-3 font-mono font-semibold text-white md:text-xl  xl:text-xl">
                     "Discoverability Boost"
                   </h1>
                   <p className="xl:text-md mt-3 px-3 font-mono text-sm text-white md:text-lg">
