@@ -93,14 +93,14 @@ export default function About() {
               <h1 className=" font-mono text-xl font-semibold text-white sm:text-2xl  md:text-4xl lg:text-6xl">
                 How do we boost you beyond the stratosphere?
               </h1>
-              <h3 className="my-3  font-mono  text-xl  text-white">
+              <h3 className="my-3 pt-2 font-mono  text-xl  text-white">
                 Welcome to Jetspire, where we redefine online visibility with
                 cutting-edge AI-based marketing tools. One of our standout
                 offerings is Programmatic SEO — a strategic approach that
                 maximizes your reach and impact in the digital realm. Let's
                 delve into how it works:
               </h3>
-              <h3 className="  border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2  border-t border-white font-mono text-xl font-semibold text-white">
                 1. Strategic Website Setup
               </h3>
               <p className=" pt-2 font-mono text-lg text-white">
@@ -109,7 +109,7 @@ export default function About() {
                 Census, we generate SEO-optimized pages for each keyword we
                 target and every town or village within our specified area.
               </p>
-              <h3 className=" border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2  border-t border-white font-mono text-xl font-semibold text-white">
                 2. Population and Demographics Integration
               </h3>
               <p className=" pt-2  font-mono text-lg text-white">
@@ -119,7 +119,7 @@ export default function About() {
                 pages. Each page is tailored to a specific combination, such as
                 "pest control Round Rock Texas."
               </p>
-              <h3 className="  border-t  border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2   border-t  border-white font-mono text-xl font-semibold text-white">
                 3. Precision Optimization
               </h3>
               <p className=" pt-2   font-mono text-lg text-white">
@@ -129,7 +129,7 @@ export default function About() {
                 this directory resides on a subdomain of your company website,
                 forging a strong association with Google.
               </p>
-              <h3 className="  border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2   border-t border-white font-mono text-xl font-semibold text-white">
                 4. Analytics Integration
               </h3>
               <p className=" pt-2   font-mono text-lg text-white">
@@ -139,7 +139,7 @@ export default function About() {
                 to secure top 3 positions in search results for the targeted
                 keywords.
               </p>
-              <h3 className="  border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2   border-t border-white font-mono text-xl font-semibold text-white">
                 5. User Engagement Tracking
               </h3>
               <p className=" pt-2  font-mono text-lg text-white">
@@ -150,7 +150,7 @@ export default function About() {
                 both the keyword and location, sending strong signals to Google
                 that someone actively sought that specific service in that area.
               </p>
-              <h3 className="  border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2   border-t border-white font-mono text-xl font-semibold text-white">
                 6. Closing the Loop with Reviews
               </h3>
               <p className=" pt-2   font-mono text-lg text-white">
@@ -159,7 +159,7 @@ export default function About() {
                 enhances the impact on the local 3-pack results, establishing
                 your business prominently in local searches.
               </p>
-              <h3 className="  border-t border-white font-mono text-xl font-semibold text-white">
+              <h3 className="pt-2   border-t border-white font-mono text-xl font-semibold text-white">
                 Why Programmatic SEO Works
               </h3>
               <p className=" pt-2 font-mono text-lg text-white">

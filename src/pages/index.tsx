@@ -67,18 +67,18 @@ export default function Home() {
           </div>
           <section className="h-auto bg-black py-5">
             <div className="flex items-center justify-center">
-              <div className="">
-                <h1 className="cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-6xl">
+              <div>
+                <h1 className="cursor-pointer text-center font-mono text-6xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
                   JETSPIRE
                 </h1>
-                <h1 className="text-center font-mono text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-2xl">
+                <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
                   AI - Marketing
                 </h1>
               </div>
               <Image
                 src="/logo.webp"
                 alt="JetSpire Logo"
-                className="my-48 w-48 sm:w-64 md:w-72 lg:w-96 xl:w-96"
+                className="my-48 w-36 sm:w-48 md:w-64 lg:w-96 xl:w-96"
                 width={1200}
                 height={1200}
               />
