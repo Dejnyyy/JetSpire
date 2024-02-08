@@ -2,6 +2,8 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../../components/footer";
+import Logo from "../../components/logo";
 
 import { navigation } from "../../components/navigation";
 
@@ -66,23 +68,7 @@ export default function Home() {
             </div>
           </div>
           <section className="h-auto bg-black py-5">
-            <div className="flex items-center justify-center">
-              <div>
-                <h1 className="cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
-                  JETSPIRE
-                </h1>
-                <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
-                  AI - Marketing
-                </h1>
-              </div>
-              <Image
-                src="/logo.webp"
-                alt="JetSpire Logo"
-                className="my-48 w-24 sm:w-48 md:w-64 lg:w-96 xl:w-96"
-                width={1200}
-                height={1200}
-              />
-            </div>
+          <Logo sitename="Home" />
           </section>
           <section className="h-auto bg-black py-12">
             <div className="flex-auto items-center justify-center text-center sm:mx-12 md:mx-24 lg:mx-48 xl:mx-96">
@@ -164,34 +150,9 @@ export default function Home() {
               ></iframe>
             </div>
           </section>
-          <section>
-            <footer>
-              <div className="h-auto border-t border-white bg-black pb-5 pt-8">
-                <div className="justify-center text-center sm:mx-12 lg:mx-48 xl:mx-96">
-                  <strong className="font-mono text-4xl font-semibold text-white">
-                    JETSPIRE
-                  </strong>
-                  <h3 className="my-5 rounded-lg p-5 px-24 font-mono  text-xl font-semibold text-white">
-                    We're here to help you reach the stars.
-                  </h3>
-                </div>
-                <div className="flex justify-center text-center">
-                  {navigation.map((item) => (
-                    <Link href={item.href} key={item.name}>
-                      <p className="ml-2 rounded-lg px-3 py-1 font-mono text-lg font-semibold text-white hover:bg-gray-700 hover:text-white">
-                        {item.name}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-                <div>
-                  <p className="mt-5 text-center font-mono text-lg  font-semibold text-white">
-                    &copy;2024
-                  </p>
-                </div>
-              </div>
-            </footer>
-          </section>
+          
+          <Footer />
+          
         </>
       )}
     </Disclosure>
