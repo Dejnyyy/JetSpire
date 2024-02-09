@@ -74,14 +74,15 @@ export default function Home() {
 						Ready for lift-off? Join us on an incredible journey and let's soar to the stellar heights of
 						success together!
 					</h3>
-					<iframe
-						className="w-full justify-center text-center sm:w-full md:w-full lg:w-full"
+          <div className='aspect-w-16 aspect-h-9 my-5'>
+          <iframe
 						title="vimeo-player"
 						src="https://player.vimeo.com/video/891487351?h=2b6cd90213"
-						width="1280"
-						height="720"
+					
 						allowFullScreen
 					/>
+          </div>
+				
 				</div>
 			</section>
 

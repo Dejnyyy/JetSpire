@@ -7,11 +7,11 @@ const Logo = (props: { sitename?: string }) => {
         <h1 className=" font-mono text-lg font-semibold text-white">
           {props.sitename}
         </h1>
-        <h1 className="cursor-pointer text-center font-mono text-2xl font-semibold text-white sm:text-4xl md:text-4xl lg:text-6xl">
-          JETSPIRE
+        <h1 className="cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-7xl md:text-8xl lg:text-10xl">
+            JETSPIRE
         </h1>
-        <h1 className="text-md text-center font-mono font-semibold text-white sm:text-lg md:text-xl lg:text-2xl">
-          AI - Marketing
+        <h1 className="text-md text-center font-mono font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
+             AI - Marketing
         </h1>
       </div>
       <Image
@@ -22,6 +22,7 @@ const Logo = (props: { sitename?: string }) => {
         height={1200}
       />
     </div>
+    
   );
 };
 
