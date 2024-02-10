@@ -3,13 +3,14 @@ import Logo from "components/logo";
 import Navbar from "components/navbar";
 import Footer from "components/footer";
 
+
 export default function Home() {
   return (
     <div className="bg-black">
       <Navbar />
       <Logo sitename="Contact" />
       <section>
-        <div className="">
+        <div>
           <div className="mb-5">
             <h1 className="text-center font-mono text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-6xl">
               Ready for lift off?

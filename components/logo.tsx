@@ -24,6 +24,7 @@ const Logo = (props: { sitename?: string }) => {
         height={1200}
       />
     </div>
+
   );
 };
 

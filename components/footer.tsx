@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { navigation } from "./navigation";
 
@@ -14,6 +15,7 @@ const Footer = () => {
           </h3>
         </div>
         <div className="flex justify-center text-center">
+
           {navigation.map((item) => (
             <Link href={item.href} key={item.name}>
               <p className="ml-2 rounded-lg px-3 py-1 font-mono text-lg font-semibold text-white hover:bg-gray-700 hover:text-white">
@@ -24,7 +26,8 @@ const Footer = () => {
         </div>
         <div>
           <p className="mt-5 text-center font-mono text-lg  font-semibold text-white">
-            &copy;2024
+
+            &copy;{new Date().getFullYear()}
           </p>
         </div>
       </div>
