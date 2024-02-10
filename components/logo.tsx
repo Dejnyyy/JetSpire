@@ -14,13 +14,14 @@ const Logo = (props: { sitename?: string }) => {
              AI - Marketing
         </h1>
       </div>
-      <Image
+      <div className="">
+        <Image
         src="/logo.webp"
         alt="JetSpire Logo"
         className="my-48 w-24 sm:w-36 md:w-48 lg:w-96 xl:w-96"
         width={1200}
         height={1200}
-      />
+      /></div>
     </div>
     
   );

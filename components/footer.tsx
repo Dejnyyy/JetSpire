@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className="mt-5">
       <div className="h-auto border-t border-white bg-black pb-5 pt-8">
         <div className="justify-center text-center sm:mx-12 lg:mx-48 xl:mx-96">
-          <strong className="font-mono text-4xl font-semibold text-white">
+          <h1 className="font-mono text-7xl font-semibold text-white">
             JETSPIRE
-          </strong>
-          <h3 className="my-5 rounded-lg p-5 px-24 font-mono  text-xl font-semibold text-white">
+          </h1>
+          <h3 className="my-5 rounded-lg p-5 px-4 font-mono  text-xl font-semibold text-white">
             We're here to help you reach the stars.
           </h3>
         </div>

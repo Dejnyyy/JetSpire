@@ -78,14 +78,11 @@ export default function Home() {
           <iframe
 						title="vimeo-player"
 						src="https://player.vimeo.com/video/891487351?h=2b6cd90213"
-					
 						allowFullScreen
 					/>
           </div>
-				
 				</div>
 			</section>
-
 			<Footer />
 		</div>
 	);
