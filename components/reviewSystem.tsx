@@ -8,7 +8,7 @@ interface ReviewProps {
 const Review: React.FC<ReviewProps> = ({ index }) => {
   const review = reviews[index];
   if (!review) {
-    return null; // Return null if the index is out of bounds
+    return null;
   }
   return (
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
