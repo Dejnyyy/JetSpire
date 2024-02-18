@@ -3,23 +3,25 @@ import Logo from 'components/logo';
 import Navbar from 'components/navbar';
 import Footer from 'components/footer';
 import Review from 'components/reviewSystem'
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="bg-black">
       <Navbar />
       <Logo />
-      <section className="h-auto bg-black py-12 px-1">
-        <div className="flex-auto items-center justify-center text-center sm:mx-12 lg:mx-36 xl:mx-80">
-          <strong className="font-mono text-2xl md:text-4xl font-semibold text-white">
+     
+      <section className="h-auto bg-black py-12 px-1 z-50">
+        <div className="flex-auto items-center justify-center text-center sm:mx-12 lg:mx-36 xl:mx-80 bg-black">
+          <h1 className="font-mono text-2xl md:text-4xl font-semibold text-white">
             Boosting You Beyond The Stratosphere!
-          </strong>
-          <h1 className="my-3 rounded-lg p-5 text-left font-mono text-lg text-white">
+          </h1>
+          <h2 className="my-3 rounded-lg p-5 text-left font-mono text-lg text-white ">
             Welcome to Jetspire, your indispensable ally for scaling the elusive peaks of online visibility.
             We don't just sprinkle a few SEO keywords and call it a day! Our AI, tailored to your needs,
             crafts ingenious solutions helping you ascend to the zenith of the Google ranks - no ads
             attached.
-          </h1>
+          </h2>
         </div>
       </section>
       <section className="mb-12 h-auto bg-black py-12">

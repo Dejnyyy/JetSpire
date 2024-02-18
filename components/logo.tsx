@@ -4,7 +4,7 @@ import React from 'react';
 const Logo = (props: { sitename?: string }) => {
 	return (
 		<div className="flex items-center justify-center">
-			<div>
+			<div className="z-40">
 				<h1 className=" font-mono text-lg font-semibold text-white"> {props.sitename}</h1>
 				<h1 className="lg:text-10xl cursor-pointer text-center font-mono text-4xl font-semibold text-white sm:text-7xl md:text-8xl">
 					JETSPIRE
@@ -16,10 +16,18 @@ const Logo = (props: { sitename?: string }) => {
 			<Image
 				src="/logo.webp"
 				alt="JetSpire Logo"
-				className="my-48 w-32 sm:w-48 md:w-64 lg:w-96 xl:w-96"
+				className="my-32 w-32 z-40 sm:w-48 md:w-64 lg:w-96 xl:w-96 xl:my-48"
 				width={1200}
 				height={1200}
 			/>
+       <Image
+				src="/luxuryjet4.jpg"
+				alt="Luxury bg"
+				className="absolute 2xl:top-0 w-full opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
+      
 		</div>
 	);
 };
