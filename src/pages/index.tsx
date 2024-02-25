@@ -23,6 +23,13 @@ export default function Home() {
             attached.
           </h2>
         </div>
+        <Image
+				src="/luxuryejo.png"
+				alt="Luxury bg"
+				className="absolute right-5  w-1/4  opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
       </section>
       <section className="mb-12 h-auto bg-black py-12">
         <h2 className="text-center font-mono text-2xl font-semibold text-white md:text-4xl">

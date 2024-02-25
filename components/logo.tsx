@@ -20,13 +20,7 @@ const Logo = (props: { sitename?: string }) => {
 				width={1200}
 				height={1200}
 			/>
-       <Image
-				src="/luxuryjet4.jpg"
-				alt="Luxury bg"
-				className="absolute 2xl:top-0 w-full opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+       
       
 		</div>
 	);
