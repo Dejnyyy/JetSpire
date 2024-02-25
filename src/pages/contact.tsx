@@ -16,7 +16,7 @@ export default function Home() {
 							Ready for lift off?
 						</h1>
 					</div>
-
+				
 					<form className="mx-auto mb-12 flex w-5/6 flex-col rounded-lg border p-4 font-mono font-semibold md:w-3/4 lg:w-1/2">
 						<Image
 							src="/logo.webp"
@@ -45,6 +45,7 @@ export default function Home() {
 							className="my-2 rounded-lg border-2 border-black p-2"
 						/>
 						<label className="text-lg text-white">Phone*</label>
+						
 						<input
 							type="text"
 							placeholder="Phone"
@@ -74,6 +75,13 @@ export default function Home() {
 								provided by the company. By providing my phone number, I agree to receive text messages
 								from the business.
 							</p>
+							<Image
+				src="/luxuryejo.png"
+				alt="Luxury bg"
+				className="absolute right-5  w-1/4  opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
 						</div>
 						<input
 							type="submit"

@@ -55,9 +55,19 @@ export default function Team() {
 								professionalism is unmatched, and his smile makes working with him a true delight.
 							</p>
 						</div>
+					
 					</div>
+					
 				</div>
+				
 			</section>
+			<Image
+				src="/luxurylamb.png"
+				alt="Luxury bg"
+				className="absolute right-5 w-1/4 bottom-4 opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
 			<Footer />
 		</div>
 	);

@@ -24,7 +24,7 @@ const Logo = (props: { sitename?: string }) => {
 	   		<Image
 				src="/luxurpriv.png"
 				alt="Luxury bg"
-				className="absolute left-5 bottom-20 w-1/4  opacity-30 z-30"
+				className="absolute left-5 lg:bottom-20 top-72 lg:w-1/4 lg:top-auto w-1/2 opacity-30 z-30"
 				width={1200}
 				height={1200}
 			/>
