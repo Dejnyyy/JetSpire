@@ -75,21 +75,24 @@ export default function Home() {
 								provided by the company. By providing my phone number, I agree to receive text messages
 								from the business.
 							</p>
-							<Image
-				src="/luxuryejo.png"
-				alt="Luxury bg"
-				className="absolute right-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+							
 						</div>
 						<input
 							type="submit"
 							value="Submit"
 							className="my-2 cursor-pointer rounded-lg border bg-black p-2 font-extrabold text-white"
 						/>
+						
 					</form>
+					<Image
+				src="/luxuryejo.png"
+				alt="Luxury bg"
+				className="absolute right-5 w-1/2 lg:w-1/4  opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
 				</div>
+				
 			</section>
 			<Footer />
 		</div>

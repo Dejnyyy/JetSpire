@@ -103,7 +103,7 @@ export default function About() {
 					<Image
 				src="/luxurcar2-Recovered.png"
 				alt="Luxury bg"
-				className="absolute left-5  w-1/4  opacity-30 z-30"
+				className="absolute right-5  w-1/4  opacity-30 z-30"
 				width={1200}
 				height={1200}
 			/>
