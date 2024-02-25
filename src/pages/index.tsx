@@ -10,7 +10,7 @@ export default function Home() {
     <div className="bg-black">
       <Navbar />
       <Logo />
-     
+      
       <section className="h-auto bg-black py-12 px-1 z-50">
         <div className="flex-auto items-center justify-center text-center sm:mx-12 lg:mx-36 xl:mx-80 bg-black">
           <h1 className="font-mono text-2xl md:text-4xl font-semibold text-white">
@@ -42,6 +42,13 @@ export default function Home() {
               <Review index={2} /> 
           </div>
         </div>
+        <Image
+				src="/luxurcar2-Recovered.png"
+				alt="Luxury bg"
+				className="absolute left-5  w-1/4  opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
       </section>
       <section className="bg-black mb-12">
         <div className="px-6 md:mx-12 lg:mx-24 xl:mx-48">

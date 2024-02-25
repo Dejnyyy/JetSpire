@@ -21,7 +21,13 @@ const Logo = (props: { sitename?: string }) => {
 				height={1200}
 			/>
        
-      
+	   		<Image
+				src="/luxurpriv.png"
+				alt="Luxury bg"
+				className="absolute left-5 bottom-20 w-1/4  opacity-30 z-30"
+				width={1200}
+				height={1200}
+			/>
 		</div>
 	);
 };
