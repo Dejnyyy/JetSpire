@@ -82,7 +82,6 @@ export default function Home() {
 							value="Submit"
 							className="my-2 cursor-pointer rounded-lg border bg-black p-2 font-extrabold text-white"
 						/>
-						
 					</form>
 					<Image
 				src="/luxuryejo.png"
