@@ -3,7 +3,6 @@ import Logo from 'components/logo';
 import Navbar from 'components/navbar';
 import Footer from 'components/footer';
 import Review from 'components/reviewSystem'
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -23,13 +22,7 @@ export default function Home() {
             attached.
           </h2>
         </div>
-        <Image
-				src="/luxuryejo.png"
-				alt="Luxury bg"
-				className="absolute right-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+       
       </section>
       <section className="mb-12 h-auto bg-black py-12">
         <h2 className="text-center font-mono text-2xl font-semibold text-white md:text-4xl">
@@ -42,13 +35,6 @@ export default function Home() {
               <Review index={2} /> 
           </div>
         </div>
-        <Image
-				src="/luxurcar2-Recovered.png"
-				alt="Luxury bg"
-				className="absolute left-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
       </section>
       <section className="bg-black mb-12">
         <div className="px-6 md:mx-12 lg:mx-24 xl:mx-48">

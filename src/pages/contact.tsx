@@ -83,13 +83,7 @@ export default function Home() {
 							className="my-2 cursor-pointer rounded-lg border bg-black p-2 font-extrabold text-white"
 						/>
 					</form>
-					<Image
-				src="/luxuryejo.png"
-				alt="Luxury bg"
-				className="absolute right-5 w-1/2 lg:w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+					
 				</div>
 				
 			</section>

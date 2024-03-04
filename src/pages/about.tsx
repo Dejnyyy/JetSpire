@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Logo from 'components/logo';
 import Navbar from 'components/navbar';
 import Footer from 'components/footer';
-import Image from 'next/image';
 
 export default function About() {
 	return (
@@ -29,13 +28,7 @@ export default function About() {
 						Leveraging data from US or UK Census, we generate SEO-optimized pages for each keyword we target
 						and every town or village within our specified area.
 					</p>
-					<Image
-				src="/luxuryejo.png"
-				alt="Luxury bg"
-				className="absolute right-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+
 					<h2 className="border-t   border-white pt-2 font-mono text-xl font-semibold ">
 						2. Population and Demographics Integration
 					</h2>
@@ -63,13 +56,7 @@ export default function About() {
 						Tools. We proactively submit a sitemap to Google, ensuring swift indexing of pages. Our goal is
 						to secure top 3 positions in search results for the targeted keywords.
 					</p>
-					<Image
-				src="/luxurylamb.png"
-				alt="Luxury bg"
-				className="absolute left-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+					
 					<h2 className="border-t   border-white pt-2 font-mono text-xl font-semibold ">
 						5. User Engagement Tracking
 					</h2>
@@ -100,13 +87,7 @@ export default function About() {
 						strategic setup enhances Google's association between your business and the targeted locations,
 						elevating your online presence.
 					</p>
-					<Image
-				src="/luxurcar2-Recovered.png"
-				alt="Luxury bg"
-				className="absolute right-5  w-1/4  opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
+					
 					<p className="pt-4 font-mono  text-md md:text-lg ">
 						At Jetspire, Programmatic SEO isn't just a service; it's a tailored approach to amplify your
 						digital footprint. Let us propel your business to the forefront of online visibility and local

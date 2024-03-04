@@ -8,13 +8,6 @@ export default function Team() {
 		<div className="bg-black">
 			<Navbar />
 			<Logo sitename="Team" />
-			<Image
-				src="/luxurylamb.png"
-				alt="Luxury bg"
-				className="absolute right-5 w-1/2 lg:w-1/4 lg:bottom-4 opacity-30 z-30"
-				width={1200}
-				height={1200}
-			/>
 			<section className="h-auto font-mono bg-black py-8">
 				<div className="text-center sm:mx-1 md:mx-12 lg:mx-24 xl:mx-12">
 					<h1 className="  text-2xl font-semibold text-white sm:text-4xl  md:text-4xl lg:text-6xl">Team</h1>
